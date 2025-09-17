@@ -1,0 +1,32 @@
+.ui-slider-handle {
+    box-shadow: 0px 0px 3px 1px #c9c9c9;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    font-weight: normal;
+    color: #454545;
+}
+
+.ui-slider-range {
+    background-color: #0064ff;
+}
+
+input:focus {
+    border: none;
+}
+
+.price-range-input {
+    padding-left: 0 !important;
+}
+
+.price-range-input:focus {
+    --tw-ring-shadow: none;
+    outline: none !important;
+    outline-offset: unset;
+}
+
+.custom-slider-container {
+    padding-top: 12px;
+}
+
+.custom-slider {}

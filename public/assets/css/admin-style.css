@@ -1,0 +1,116 @@
+.error {
+	color: red;
+	margin-top: 3px;
+}
+
+.tbl-img {
+	width: 100%;
+	max-width: 125px;
+	height: auto;
+}
+
+.trip-tab-form form .form-group {
+	margin-bottom: 1rem;
+}
+
+.itinerary-block-action {
+	display: flow-root;
+}
+
+.itinerary-block-action>div {
+	visibility: hidden;
+	margin-bottom: 3px;
+	/*width: 62px;*/
+	/*border-radius: 50px;*/
+	display: block;
+	float: right;
+	/*background-color: #f7f8fa;*/
+}
+
+#itinerary-block>.form-group:hover .itinerary-block-action>div {
+	visibility: visible;
+}
+
+.travel-timeline .kt-timeline-v2__item-time {
+	font-size: 13px !important;
+}
+
+.travel-timeline .kt-timeline-v2__item .kt-timeline-v2__item-cricle, .travel-timeline .kt-timeline-v2__item .kt-timeline-v2__item-time {
+	top: 3.2rem !important;
+}
+
+.travel-timeline .kt-timeline-v2__item .kt-timeline-v2__item-text {
+	width: 100%;
+}
+
+.itinerary-group:first-child>.travel-timeline {
+	padding-top: 0px;
+}
+
+.itinerary-group {
+	margin-bottom: 0px !important;
+}
+
+.itinerary-group>.travel-timeline {
+	padding-top: 35px;
+}
+
+.move-itinerary {
+	cursor: pointer;
+}
+
+.sortable-placeholder {
+	border: 3px dashed #0abb87;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 150px;
+	opacity: .4;
+}
+
+.trip-nav-tabs .nav-link, .trip-nav-tabs .nav-link>i {
+	color: #9a9a9a !important;
+}
+
+.trip-nav-tabs .nav-item .nav-link.active, .trip-nav-tabs .nav-item .nav-link:active, .trip-nav-tabs .nav-item .nav-link:hover, .trip-nav-tabs .nav-item .nav-link:hover>i, .trip-nav-tabs .nav-item .nav-link.active>i {
+	color: #5d78ff !important;
+}
+
+.ui-sortable-helper {
+	border-radius: 10px;
+	border: 2px solid #e7e9f5;
+	padding: 20px;
+	min-height: 400px;
+}
+
+.rating-symbol-foreground, .rating-symbol-background {
+	color: #e2c600 !important;
+}
+
+.datepicker table tr td.disabled, .datepicker table tr td.disabled:hover {
+	color: #cecece !important;
+}
+
+.required_field {
+	color: red;
+}
+
+.trip-departure-date-block {
+	position: relative;
+}
+
+.btn-departure-date-remove {
+	position: absolute;
+	right: 10px;
+	width: 20px;
+	height: 20px;
+	padding: 1px 5px;
+	top: 0px;
+}
+
+.btn-departure-date-remove:hover {
+	color: red;
+}
+
+.crop-img-div {
+	width: 400px;
+}

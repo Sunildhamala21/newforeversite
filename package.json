@@ -1,0 +1,35 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@alpinejs/collapse": "^3.14.3",
+        "@alpinejs/focus": "^3.14.3",
+        "@ckeditor/ckeditor5-inspector": "^4.1.0",
+        "@fancyapps/ui": "^5.0.36",
+        "@tailwindcss/forms": "^0.5.9",
+        "@tailwindcss/typography": "^0.5.15",
+        "@tailwindcss/vite": "^4.0.9",
+        "alpinejs": "^3.14.3",
+        "axios": "^1.11.0",
+        "chart.js": "^4.4.5",
+        "chartjs-plugin-datalabels": "^2.2.0",
+        "ckeditor5": "^44.3.0",
+        "embla-carousel": "^8.6.0",
+        "embla-carousel-autoplay": "^8.6.0",
+        "flatpickr": "^4.6.13",
+        "jquery": "^3.7.1",
+        "laravel-vite-plugin": "^1.2.0",
+        "lodash.debounce": "^4.0.8",
+        "postcss": "^8.4",
+        "smartmenus": "^1.2.1",
+        "tailwindcss": "^4.0.9",
+        "tiny-slider": "^2.9.4",
+        "toastr": "^2.1.4",
+        "tom-select": "^2.4.3",
+        "vite": "^6.2.0"
+    }
+}

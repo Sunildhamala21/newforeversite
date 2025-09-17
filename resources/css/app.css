@@ -1,0 +1,115 @@
+@import "tailwindcss" source(none);
+@import '../../node_modules/flatpickr/dist/flatpickr.css' layer(base);
+@import '../../node_modules/@fancyapps/ui/dist/fancybox/fancybox.css' layer(base);
+@import '../../node_modules/tiny-slider/dist/tiny-slider.css' layer(base);
+@import '../../node_modules/smartmenus/dist/css/sm-core-css.css' layer(base);
+@import '../../node_modules/toastr/build/toastr.css' layer(base);
+@import './style.css' layer(base);
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source "../**/*.blade.php";
+@source "../**/*.js";
+
+@theme {
+  --color-primary: #1A5998;
+  --color-primary-dark: color-mix(in oklch, var(--color-primary), black 10%);
+  --color-primary-light: color-mix(in oklch, var(--color-primary), white 80%);
+  --color-secondary: var(--color-emerald-600);
+  --color-secondary-dark: color-mix(in oklch, var(--color-secondary), black 10%);
+  --color-accent: #F4AD44;
+  --color-accent-light: color-mix(in oklch, var(--color-accent), white 75%);
+  --color-accent-dark: color-mix(in oklch, var(--color-accent), black 10%);
+  --color-dark: #060d13;
+  --font-body: 'Poppins', system-ui, sans-serif;
+  --font-display: 'Roboto Condensed', system-ui, sans-serif;
+}
+
+@utility container {
+  @apply px-4 md:px-8 mx-auto max-w-[1400px];
+}
+
+@utility prose {
+  max-width: 85ch;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex px-6 py-2.5 rounded-sm transition-colors tracking-wide;
+  }
+
+  .btn-primary {
+    @apply text-white bg-primary hover:bg-primary-dark;
+  }
+
+  .btn-accent {
+    @apply text-white bg-accent hover:bg-primary;
+  }
+
+  .btn-secondary {
+    @apply text-white bg-secondary hover:bg-secondary-dark;
+  }
+
+  .btn-muted {
+    @apply text-gray-600 bg-gray-200 hover:bg-gray-300;
+  }
+}
+
+[x-cloak] {
+  display: none;
+}
+
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  gap: 12px;
+}
+
+.embla__dot {
+  -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  width: .6rem;
+  height: .6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #ffffff55;
+}
+
+.embla__dot--selected {
+  background-color: #ffffffff;
+}
+
+ul.leaders {
+  padding: 0;
+  list-style: none;
+  overflow-x: hidden;
+
+  li::before {
+    float: left;
+    white-space: nowrap;
+    content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
+    width: 0;
+    color: var(--color-gray-400);
+  }
+
+  span:first-child {
+    background: #fff;
+    padding-right: .33em;
+  }
+
+  span+span {
+    float: right;
+    background: #fff;
+    padding-left: .33em;
+  }
+
+}
